@@ -1,0 +1,166 @@
+@import "src/style/common";
+
+.wrapper {
+  background: $orange;
+  position: relative;
+  z-index: 4;
+  overflow-x: clip;
+
+
+  .background {
+    width: vwPC(1440);
+    height: vwPC(706.92);
+
+    @include phone-down() {
+      width: vwMB(365.22);
+      height: vwMB(296.27);
+      left: vwMB(-1.6);
+    }
+  }
+
+  .pink_bottle {
+    position: absolute;
+    width: vwPC(336);
+    height: vwPC(621);
+    right: vwPC(138);
+    top: vwPC(28);
+    z-index: 5;
+
+    @include phone-down() {
+      top: vwMB(38.3);
+      right: vwMB(9.64);
+      width: vwMB(112.46);
+      height: vwMB(219.69);
+    }
+  }
+
+  .watermelon_text {
+    position: absolute;
+    width: vwPC(315);
+    height: vwPC(252.6);
+    left: vwPC(500);
+    bottom: vwPC(72.4);
+
+    @include phone-down() {
+      width: vwMB(120.83);
+      height: vwMB(96.91);
+      left: vwMB(108.67);
+      bottom: vwMB(47.41);
+    }
+  }
+
+  .lazyPeople {
+    position: absolute;
+    left: vwPC(91);
+    top: vwPC(343);
+    width: vwPC(276);
+    height: vwPC(348);
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    @include phone-down() {
+      width: vwMB(91.3);
+      height: vwMB(114.89);
+      left: vwMB(11.6);
+      top: vwMB(138.99)
+    }
+  }
+
+  .lazy_people_animation {
+/*    animation: up 3s ease-out;
+    animation-fill-mode: forwards;*/
+  }
+
+  .union_pink {
+    position: absolute;
+    bottom: vwPC(308);
+    left: vwPC(218);
+    width: vwPC(380);
+    height: vwPC(253);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .union_pink_mobile {
+    display: none;
+
+    @include phone-down() {
+      transition: all 0.5s ease-out;
+      display: block;
+      position: absolute;
+      left: vwMB(43.2);
+      bottom: vwMB(144.27);
+      width: vwMB(134);
+      height: vwMB(86);
+      opacity: 0;
+    }
+  }
+
+  .union_pink_mobile_show {
+
+    @include phone-down() {
+      transition: all 0.5s ease-out;
+      width: vwMB(191.99);
+      height: vwMB(128);
+      opacity: 1;
+    }
+  }
+
+  .union_pink_show {
+    width: vwPC(543);
+    height: vwPC(362);
+    opacity: 1;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .union_animation {
+/*    animation: upUnion 3s ease-out;
+    animation-fill-mode: forwards;*/
+  }
+
+  .vitamin_b {
+    position: absolute;
+    bottom: 4.86vw;
+    right: 1.04vw;
+    width: 15.42vw;
+    height: 15.42vw;
+    z-index: 5;
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      width: vwMB(56.24);
+      height: vwMB(56.24);
+      transform: rotate(17.43deg);
+      right: vwMB(-16);
+      bottom: 8.4vw;
+    }
+  }
+
+  @keyframes up {
+    from {
+      bottom: 0
+    }
+    to {
+      bottom: 13.2vw;
+    }
+  }
+
+  @keyframes upUnion {
+    from {
+      bottom: 0
+    }
+    to {
+      bottom: 41.5vw;
+    }
+  }
+}

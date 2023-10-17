@@ -1,0 +1,292 @@
+@import 'src/style/common';
+
+.wrapper_logo {
+  background: $pink;
+  position: relative;
+
+  .background_black {
+    width: vwPC(1440);
+    height: vwPC(792);
+
+    @include phone-down() {
+      height: vwMB(306);
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    width: 93vw;
+    display: none;
+
+    @include phone-down() {
+      display: block;
+    }
+  }
+
+  .logo_pc {
+    display: block;
+    position: absolute;
+    top: vwPC(-20);
+    left: 0;
+    width: vwPC(1332);
+    height: vwPC(628);
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .logo_subword {
+    width: 33vw;
+    position: absolute;
+    left: 11.4vw;
+    top: 46vw;
+    display: none;
+
+    @include phone-down() {
+      top: 54vw;
+      display: block;
+    }
+  }
+}
+
+.wrapper_pink {
+  background: $pink;
+  padding-top: vwPC(82);
+  position: relative;
+  margin-top: vwPC(-2);
+
+  @include phone-down() {
+    padding-top: vwMB(12);
+  }
+
+  .energy {
+    position: absolute;
+    right: 0;
+    top: vwPC(210);
+    width: 9.2vw;
+    height: 8.06vw;
+
+    @include laptop-down() {
+      display: block;
+      width: 13vw;
+      height: vwMB(37);
+      top: vwMB(54);
+      right: 0;
+    }
+  }
+
+  .vitamin_b {
+    position: absolute;
+    width: vwPC(205);
+    height: vwPC(205);
+    left: vwPC(20);
+    bottom: vwPC(-17);
+    transform: rotate(-16.28deg);
+    z-index: 7;
+
+    @include laptop-down() {
+      display: block;
+      width: vwMB(65.5);
+      height: vwMB(65.5);
+      bottom: vwMB(-2);
+      left: 2vw;
+      transform: translate(0, 10%) rotate(-16.28deg);
+    }
+  }
+
+  .taurin {
+    width: vwPC(156);
+    height: vwPC(156);
+    position: absolute;
+    top: vwPC(463);
+    z-index: 5;
+    right: vwPC(30);
+    transform: translate(0, 13%) rotate(5.33deg);
+
+    @include laptop-down() {
+      display: block;
+      width: vwMB(48);
+      height: vwMB(48);
+      right: vwMB(36);
+      top: vwMB(142);
+    }
+  }
+
+  .coffe {
+    position: absolute;
+    width: vwPC(166.5);
+    height: vwPC(166.5);
+    top: vwPC(115);
+    left: vwPC(-40);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(60.95deg);
+
+    @include laptop-down() {
+      display: block;
+      top: vwMB(74);
+      left: -4.17vw;
+      width: vwMB(59.63);
+      height: vwMB(59.63);
+    }
+  }
+
+  .text {
+    display: block;
+    margin: 0 auto;
+    background: $pink;
+    width: vwPC(975);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: $white;
+    font-weight: 400;
+    font-size: 4.03vw;
+    line-height: 4.58vw;
+    position: relative;
+    padding-bottom: vwPC(124);
+
+    @include laptop-down() {
+      display: none;
+    }
+
+
+    b {
+      font-weight: 700;
+    }
+
+    .smile {
+      width: 6.46vw;
+      height: 4.31vw;
+      position: absolute;
+      position: absolute;
+      right: vwPC(15);
+      top: vwPC(60);
+    }
+
+    .text_description {
+      margin-top: 2.5vw;
+      position: relative;
+
+      .fruits_text {
+        position: absolute;
+        top: 3.89vw;
+        left: 14.53vw;
+        width: 15.14vw;
+      }
+
+      .empty_span {
+        width: 16.83vw;
+        display: inline-block;
+      }
+
+      .last_string {
+        display: flex;
+        position: relative;
+
+        .smile_two {
+          position: absolute;
+          top: -0.56vw;
+          width: 8.96vw;
+          height: 4.24vw;
+
+          @include phone-down() {
+            width: 13.06vw;
+            height: 5.28vw;
+          }
+        }
+
+        .empty_span {
+          width: 9.375vw;
+        }
+
+        .btn {
+          border-radius: 2.57vw;
+          height: 4.375vw;
+          width: 30.35vw;
+          background: #FDC400;
+          color: $white;
+          cursor: pointer;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            box-sizing: border-box;
+            border: solid 0.21vw #FDC400;
+            background: #EB627E;
+          }
+        }
+      }
+
+    }
+  }
+
+  .text_mobile {
+    display: none;
+    margin: 0 auto;
+    background: $pink;
+    color: $white;
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.44vw;
+    line-height: 5vw;
+    width: 56.94vw;
+    padding-bottom: 12.5vw;
+
+    @include laptop-down() {
+      display: block;
+    }
+
+    b {
+      font-weight: 700;
+    }
+
+    .smile {
+      display: inline-block;
+      width: 8.89vw;
+      height: 5.83vw;
+    }
+
+    .text_description {
+      margin-top: 5.56vw;
+      position: relative;
+
+      @include phone-down() {
+        margin-top: 2vw;
+      }
+
+      .fruits_text {
+        display: inline-block;
+        width: 17vw;
+        height: 4.44vw;
+        margin: 0;
+
+        @include phone-down() {
+          width: 15vw;
+          margin: 0 1vw;
+        }
+      }
+
+      .empty_span {
+        width: 63.33vw;
+        display: inline-block;
+      }
+
+      .last_string {
+        margin-top: 5.56vw;
+
+        @include phone-down() {
+          margin-top: 2.5vw;
+        }
+
+        .smile_two {
+          display: inline-block;
+          width: vwMB(47);
+          height: vwMB(19);
+        }
+      }
+    }
+  }
+}

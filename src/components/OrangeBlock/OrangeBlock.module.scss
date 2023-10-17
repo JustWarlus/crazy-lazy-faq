@@ -1,0 +1,232 @@
+@import "src/style/common";
+
+.wrapper {
+  background: $yellow;
+  position: relative;
+  overflow-x: clip;
+
+  .orange_wave {
+    position: relative;
+    width: vwPC(1440);
+    height: vwPC(1093.48);
+    margin-top: vwPC(-241.48);
+    display: block;
+    z-index: 1;
+
+    @include phone-down() {
+      z-index: 0;
+    }
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .orange_wave_mobile {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      position: relative;
+      width: vwMB(360);
+      height: vwMB(354.31);
+      margin-top: vwMB(-82.17);
+    }
+  }
+
+  .yellow_bottle {
+    position: absolute;
+    z-index: 5;
+    width: vwPC(305.43);
+    height: vwPC(618.14);
+    left: vwPC(105);
+    bottom: vwPC(202.34);
+
+    @include phone-down() {
+      width: vwMB(100.85);
+      height: vwMB(218.58);
+      top: vwMB(44.89);
+      left: vwMB(10);
+    }
+  }
+
+  .energy {
+    position: absolute;
+    width: 13vw;
+    height: 8.89vw;
+    top: 68vw;
+    left: -1.74vw;
+    z-index: 5;
+    display: none;
+
+    @include phone-down() {
+      display: block;
+    }
+  }
+
+  .pineapple_linchi {
+    position: absolute;
+    width: vwPC(276.44);
+    height: vwPC(164.9);
+    left: vwPC(564);
+    bottom: vwPC(270.76);
+    z-index: 5;
+
+    @include phone-down() {
+      width: vwMB(102.23);
+      height: vwMB(60.87);
+      left: vwMB(154);
+      bottom: vwMB(85.9);
+    }
+  }
+
+  .berry {
+    position: absolute;
+    width: vwPC(72.48);
+    height: vwPC(83.39);
+    right: vwPC(163.52);
+    bottom: vwPC(300.08);
+    z-index: 1;
+
+    @include phone-down() {
+      width: vwMB(23.59);
+      height: vwMB(27.14);
+      right: vwMB(12);
+      bottom: vwMB(115);
+      z-index: 0;
+    }
+  }
+
+  .crazy_linch {
+    width: vwPC(264);
+    height: vwPC(411);
+    position: absolute;
+    bottom: vwPC(195);
+    left: vwPC(305);
+    cursor: pointer;
+    z-index: 5;
+
+    @include phone-down() {
+      width: vwMB(92.07);
+      height: vwMB(143.3);
+      left: vwMB(70);
+      bottom: vwMB(94.35);
+      z-index: 7;
+    }
+  }
+
+  .vitamin_b {
+    position: absolute;
+    top: vwPC(444);
+    right: vwPC(-47);
+    width: vwPC(221.73);
+    height: vwPC(221.73);
+    transform: rotate(17.43deg);
+    z-index: 1;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .yellow_spray {
+    position: absolute;
+    width: vwPC(97.11);
+    height: vwPC(132.88);
+    left: vwPC(500);
+    top: vwPC(165);
+    transform: matrix(1, -0.01, 0.02, 1, 0, 0) rotate(-8deg);
+    z-index: 6;
+    display: block;
+
+    @include phone-down() {
+      width: vwMB(24.63);
+      height: vwMB(43.05);
+      top: vwMB(52.72);
+      left: vwMB(127);
+    }
+  }
+
+  .union {
+    position: absolute;
+    left: vwPC(587);
+    top: vwPC(247);
+    width: vwPC(402);
+    height: vwPC(295);
+    z-index: 4;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .union_orange_mobile {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      width: vwMB(142);
+      height: vwMB(109);
+      position: absolute;
+      left: vwMB(130);
+      top:vwMB(43.88);
+      z-index: 6;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  .union_orange_mobile_show {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      opacity: 1;
+      width: vwMB(204.04);
+      height: vwMB(157.12);
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  .union_show {
+    transition: all 0.5s ease-out;
+    width: vwPC(575);
+    height: vwPC(422);
+    opacity: 1;
+  }
+
+  .linch_animation {
+    /*    animation: up 4s ease-out;
+        animation-fill-mode: forwards;*/
+  }
+
+  .orange_spray {
+    position: absolute;
+    left: vwPC(93);
+    bottom: vwPC(89.35);
+    width: vwPC(118.32);
+    height: vwPC(95.02);
+    z-index: 1;
+
+    @include phone-down() {
+      width: vwMB(30.12);
+      height: vwMB(30.61);
+      left: vwMB(24);
+      bottom: vwMB(29);
+      z-index: 0;
+    }
+  }
+}
+
+
+@keyframes up {
+  from {
+    bottom: 10vw;
+  }
+  to {
+    bottom: 25.81vw;
+  }
+}

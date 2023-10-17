@@ -1,0 +1,220 @@
+@import 'src/style/common';
+
+.wrapper {
+  background: $yellow;
+  margin-top: vwPC(-316);
+  height: vwPC(936);
+  position: relative;
+  overflow-x: clip;
+
+  @include phone-down() {
+    margin-top: -2px;
+    height: vwMB(140);
+  }
+
+  .bottle {
+    position: absolute;
+    width: vwPC(684.82);
+    height: vwPC(626);
+    right: vwPC(65.18);
+    bottom: vwPC(94);
+    z-index: 10;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .bottle_mobile {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      width: vwMB(221.29);
+      height: vwMB(247.28);
+      position: absolute;
+      right: vwMB(-17);
+      bottom: vwMB(10);
+      z-index: 3;
+    }
+  }
+
+  .energy_and_melons {
+    width: vwPC(333.44);
+    height: vwPC(453.93);
+    position: absolute;
+    bottom: vwPC(180.07);
+    left: -40px;
+    z-index: 2;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .spray_left {
+    position: absolute;
+    top: -15.83vw;
+    left: 6.25vw;
+    width: 8.89vw;
+    height: 7.92vw;
+  }
+
+  .spray_right {
+    display: none;
+
+
+    @include phone-down() {
+      display: block;
+      position: absolute;
+      width: vwMB(17.5);
+      height: vwMB(24.58);
+      top: vwMB(-72);
+      right: 0;
+    }
+  }
+
+  .union_eat_mobile {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      width: vwMB(131);
+      height: vwMB(88);
+      position: absolute;
+      right: vwMB(138);
+      bottom: vwMB(78);
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }
+  }
+
+  .union_eat_mobile_show {
+
+    @include phone-down() {
+      transition: all 0.5s ease-out;
+      width: vwMB(188.66);
+      height: vwMB(126.22);
+      opacity: 1;
+    }
+  }
+
+  .melon_half {
+    position: absolute;
+  }
+
+  .lazy_people {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2.29vw;
+    right: 23.67vw;
+    width: 31.39vw;
+    height: 28.4vw;
+  }
+
+  .melon_text {
+    position: absolute;
+    bottom: vwPC(144.37);
+    left: vwPC(313.14);
+    width: vwPC(281.86);
+    height: vwPC(170.73);
+    z-index: 2;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .yellow_mobile_text {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      position: absolute;
+      width: vwMB(173.59);
+      height: vwMB(114.59);
+      left: vwMB(-23);
+      bottom: vwMB(10);
+    }
+  }
+
+  .melon_2 {
+    position: absolute;
+    left: 5.14vw;
+    bottom: 13.74vw;
+    width: 10.97vw;
+    height: 7.43vw;
+  }
+
+  .melon_half {
+    position: absolute;
+    bottom: 17.49vw;
+    left: 0;
+    width: 10.9vw;
+    height: 11.67vw;
+  }
+
+  .union_eat {
+    position: absolute;
+    right: vwPC(643.49);
+    bottom: vwPC(372.46);
+    width: vwPC(349);
+    height: vwPC(237);
+    transition: all 0.5s ease-out;
+    z-index: 2;
+    opacity: 0;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+      opacity: 1;
+      width: 51.6vw;
+      height: 34.02vw;
+    }
+  }
+
+  .union_show {
+    width: vwPC(507.51);
+    height: vwPC(339.54);
+    transition: all 0.5s ease-out;
+    opacity: 1;
+  }
+
+  .cofe {
+    width: 20.83vw;
+    height: 20.83vw;
+    position: absolute;
+    top: -16.11vw;
+    left: 52.18vw;
+  }
+
+  .lazy_animation {
+/*    animation: up 3s ease-out;
+    animation-fill-mode: forwards;*/
+  }
+
+  .union_animation {
+/*    animation: upUnion 3s ease-out;
+    animation-fill-mode: forwards;*/
+  }
+
+  @keyframes up {
+    from {
+      bottom: -5vw;
+    }
+    to {
+      bottom: 2.29vw;
+    }
+  }
+  @keyframes upUnion {
+    from {
+      bottom: 13.57vw;
+    }
+    to {
+      bottom: 22.57vw;
+    }
+  }
+}

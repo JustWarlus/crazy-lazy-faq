@@ -1,0 +1,39 @@
+@import "src/style/common";
+
+.black_line {
+  height: vwPC(15);
+  background: #000000;
+
+  @include phone-down() {
+    height: vwMB(10);
+  }
+}
+
+.black_line_subvideo {
+  height: vwPC(11.74);
+  background: #000000;
+
+  @include phone-down() {
+    display: none;
+  }
+}
+
+.black_line_submobile {
+  height: vwPC(15);
+  background: #000000;
+
+  @include phone-down() {
+    height: vwMB(15);
+  }
+}
+
+.yellow_line_after_block {
+  background: $yellow;
+  height: 80px;
+}
+
+.displayNone {
+  @media (max-width: 640px) {
+    display: none;
+  }
+}

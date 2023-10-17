@@ -1,0 +1,178 @@
+@import "src/style/common";
+
+.faqCont {
+  background-color: #ef7c37;
+  padding: 50px 0 100px;
+  background-image: url(../../assets/img/faq_cont_right.png);
+  background-position: 100% 135px;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  position: relative;
+
+  @media (max-width: 1440px) {
+    background-position: 102% 150px;
+    background-size: 29%;
+  }
+
+  @media (max-width: 1080px) {
+    background-image: none;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 0 75px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 30px 0 55px;
+  }
+}
+
+.faqTitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  font-size: 4.03vw;
+  line-height: 4.58vw;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  padding: 8px 86px 0 31px;
+  border-radius: 50px;
+  display: inline;
+  position: relative;
+  margin-bottom: 45px;
+
+  @media (max-width: 1080px) {
+    padding: 8px 56px 0 21px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 8px 36px 0 11px;
+  }
+
+  @media (max-width: 440px) {
+    padding: 6px 27px 0 11px;
+  }
+}
+
+.faqContent {
+  margin: 0 auto;
+  width: vwPC(975);
+
+  @media (max-width: 440px) {
+    width: vwPC(1075);
+  }
+}
+
+.imgFaqTitle {
+  position: absolute;
+  top: -37px;
+  right: -24px;
+
+  @media (max-width: 1440px) {
+    top: -30px;
+    right: -12px;
+  }
+
+  @media (max-width: 1080px) {
+    top: -23px;
+    right: -18px;
+  }
+
+  @media (max-width: 640px) {
+    top: -14px;
+    right: -8px;
+  }
+
+  @media (max-width: 440px) {
+    top: -9px;
+    right: -6px;
+  }
+}
+
+.widthImg {
+  width: 127px;
+  max-width: none;
+
+  @media (max-width: 1440px) {
+    width: 105px;
+  }
+
+  @media (max-width: 1080px) {
+    width: 85px;
+  }
+
+  @media (max-width: 640px) {
+    width: 50px;
+  }
+
+  @media (max-width: 440px) {
+    width: 35px;
+  }
+}
+
+.imgContleft {
+  position: absolute;
+  top: 200px;
+  left: -15px;
+  height: 556px;
+
+  @media (max-width: 1440px) {
+    top: 215px;
+    left: -15px;
+    height: 475px;
+  }
+
+  @media (max-width: 1180px) {
+    display: none;
+  }
+}
+
+.yellowSpan {
+  padding: 0 10px;
+  background-color: #f3cc00;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.linkInst {
+  border-radius: 23.5px;
+  border: 3px solid #fff;
+  background: #ff647d;
+  padding: 3px 12px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+
+  @media (max-width: 440px) {
+    border: 0.5px solid #fff;
+    padding: 0 8px;
+  }
+}
+
+.linkInst:hover {
+  background-color: #94c11e;
+  transition: 0.3s;
+}
+
+.imgContRight {
+  display: none;
+
+  @media (max-width: 1080px) {
+    display: block;
+    position: absolute;
+    top: 208px;
+    right: 23%;
+    height: 61%;
+  }
+
+  @media (max-width: 640px) {
+    top: 169px;
+    right: 23%;
+    height: 60%;
+  }
+
+  @media (max-width: 440px) {
+    top: 140px;
+    height: 57%;
+  }
+}

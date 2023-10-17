@@ -1,0 +1,348 @@
+@import 'src/style/common';
+
+.block {
+  height: vwPC(735);
+  background: $orange;
+  position: relative;
+  display: none;
+
+  @include phone-down() {
+    display: block;
+    height: 151.667vw;
+    overflow-x: clip;
+  }
+
+  .wrapper_swiper {
+    border-radius: vwPC(15);
+    position: relative;
+    width: 23.694444vw;
+    height: 43.5vw;
+    top: vwPC(40);
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+
+    @include phone-down() {
+      width: vwMB(232);
+      top: 19vw;
+      height: vwMB(423);
+      border-radius: vwMB(25);
+      overflow: hidden;
+    }
+
+    .swiper {
+      //height: 33.5vw;
+      width: 23.694444vw;
+      border-radius: vwPC(47);
+
+      @include phone-down() {
+        width: 100%;
+        height: vwMB(423);
+      }
+
+      video {
+        pointer-events: none;
+        width: 76vw !important;
+
+        @include phone-down() {
+          width: 207vw !important;
+        }
+      }
+    }
+  }
+
+
+  .video_placeholder {
+    position: absolute;
+    top: vwPC(187);
+    background: #FFFFFF;
+    transform: translate(-50%, 0) rotate(90deg);
+    left: 50%;
+    width: vwPC(615);
+    height: vwPC(334);
+    border-radius: vwPC(31);
+    z-index: 0;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .crazy {
+    display: none;
+
+    @include phone-down() {
+      display: block;
+      width: vwMB(107);
+      height: vwMB(189);
+      position: absolute;
+      left: vwMB(4);
+      bottom: vwMB(9);
+      z-index: 5;
+    }
+  }
+
+
+  .mobile_block_right {
+    position: absolute;
+    width: vwPC(473.69);
+    height: vwPC(638.59);
+    right: vwPC(58.31);
+    top: vwPC(71);
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .mobile_block_left {
+    display: block;
+    position: absolute;
+    width: vwPC(455);
+    height: vwPC(691);
+    top:vwPC(13);
+    left: vwPC(-81);
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .cafe {
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+    bottom: 0;
+    right: 23vw;
+    transform: rotate(24.83deg);
+    z-index: 6;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .energy_mobile {
+    width: 13vw;
+    height: 8.89vw;
+    position: absolute;
+    right: 14.944vw;
+    bottom: 10vw;
+    z-index: 5;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .fruit_mobile {
+    width: 26.39vw;
+    height: 27.083vw;
+    position: absolute;
+    top: 16.944vw;
+    right: 4.861vw;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .fruit_mobile_left {
+    display: none;
+    position: absolute;
+    top: -4.444vw;
+    right: -4.444vw;
+    width: 29.167vw;
+    height: 129.722vw;
+    z-index: 6;
+
+    @include phone-down() {
+      display: block;
+    }
+  }
+
+  .fruilt_mobile_left_for_mobile {
+    width: 19.167vw;
+    height: 90.833vw;
+    position: absolute;
+    top: 4.444vw;
+    left: -5.833vw;
+    display: none;
+
+    @include phone-down()   {
+      display: block;
+    }
+  }
+
+
+  .taurin {
+    width: 13.68vw;
+    height: 13.68vw;
+    position: absolute;
+    top: 7.917vw;
+    left: -3.472vw;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .vitamin_b {
+    width: 11.111vw;
+    height: 11.111vw;
+    position: absolute;
+    left: 6.736vw;
+    top: -1.806vw;
+    transform: rotate(-16.28deg);
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .mobilka {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 52.85vw;
+    height: 29.72vw;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background: #000000;
+    border-radius: 4.375vw;
+    display: block;
+
+    @include phone-down() {
+      display: none;
+    }
+
+    .relative {
+      position: relative;
+
+      .eyebrow {
+        position: absolute;
+        left: -1.736vw;
+        top: 13.89vw;
+        width: 7.71vw;
+        height: 1.737vw;
+        background: #000000;
+        border-radius: 0 0 0.868vw 0.868vw;
+        transform: rotate(-90deg);
+        z-index: 7;
+      }
+
+    }
+  }
+
+  .mobile_for_mobile {
+    display: none;
+    position: absolute;
+    width: 70vw;
+    height: 121.67vw;
+    left: 50%;
+    top: 16.94vw;
+    transform: translate(-50%, 0);
+
+    @include phone-down() {
+      display: block;
+    }
+  }
+
+  .people {
+    position: absolute;
+    width: 22.153vw;
+    height: 39.514vw;
+    left: 4.028vw;
+    bottom: 4.167vw;
+    cursor: pointer;
+
+    @include phone-down() {
+      width: 29.72vw;
+      height: 52.5vw;
+      left: 1.11vw;
+      bottom: 2.5vw;
+    }
+  }
+
+  .mobile {
+    position: absolute;
+    display: block;
+    width: vwPC(361.47);
+    height: vwPC(642.71);
+    top: vwPC(33);
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    @include phone-down() {
+      display: none;
+    }
+  }
+
+  .union {
+    width: vwPC(211);
+    height: vwPC(161.7);
+    position: absolute;
+    bottom: vwPC(395);
+    left: vwPC(304);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    z-index: 3;
+
+    @include phone-down() {
+      width: vwMB(50.57);
+      height: vwMB(40.6);
+      left: vwMB(78);
+      bottom: vwMB(154.4);
+    }
+  }
+
+  .union_show {
+    width: vwPC(302);
+    height: vwPC(231);
+    transition: all 0.5s ease-out;
+    opacity: 1;
+
+    @include phone-down() {
+      width: vwMB(88.57);
+      height: vwMB(67.6);
+    }
+  }
+
+  .union_text {
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.986vw;
+    line-height: 3.056vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EB627E;
+    position: absolute;
+    bottom: 38.889vw;
+    left: 25.694vw;
+    opacity: 0;
+
+    @include phone-down() {
+      left: 28vw;
+      bottom: 50.7vw;
+    }
+  }
+
+  .union_text_show {
+    opacity: 1;
+  }
+
+  .melon_1 {
+    position: absolute;
+  }
+}
+
+.show_block {
+  display: block;
+}
